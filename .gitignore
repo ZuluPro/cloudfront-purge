@@ -1,1 +1,4 @@
 *.sw[pon]
+cf_purge.egg-info/
+__pycache__/
+dist

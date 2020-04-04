@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+"""
+Invalidate easily your CloudFront distribution.
+"""
+VERSION = (0, 1, 0)
+__version__ = '.'.join([str(i) for i in VERSION])
+__author__ = 'Anthony Monthe (ZuluPro)'
+__url__ = 'https://github.com/ZuluPro/cf-purge'
+__email__ = 'anthony.monthe@gmail.com'
+
 import argparse
 from datetime import datetime
 import logging
@@ -24,7 +33,7 @@ def main():
     parser.add_argument(
         '-c', '--caller-reference', required=False,
         default=get_default_reference(),
-        help="Unique identifier for invalidation request, default is"
+        help="Unique identifier for invalidation request, default is "
              "a timestamp."
     )
     parser.add_argument('paths', nargs='+')
