@@ -1,11 +1,17 @@
 ========
-cf_purge
+cf-purge
 ========
 
+Install cf-purge: ::
+
+    pip install cf_purge
+    
+    
 ::
-    usage: cf_purge.py [-h] [-a ACCESS_KEY] [-s SECRET_KEY] -d DISTRIBUTION
-                       [-c CALLER_REFERENCE] [-t] [-v]
-                       paths [paths ...]
+
+    usage: cf_purge [-h] [-a ACCESS_KEY] [-s SECRET_KEY] -d DISTRIBUTION
+                    [-c CALLER_REFERENCE] [-t] [-v]
+                    paths [paths ...]
 
     Invalidate AWS CloudFront's cache.
 
